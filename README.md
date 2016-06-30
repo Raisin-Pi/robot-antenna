@@ -2,27 +2,45 @@
 
 ![](cover.png)
 
-We are going to make a robot that beeps and has a flashing antenna using a Raspberry Pi.
+### Ce que vous allez créer
+Dans cette ressource, vous allez faire un robot qui fait bip sur Scratch et construire un robot en carton avec une vraie antenne à LED qui clignote en utilisant un Raspberry Pi. 
 
-## Requirements
+### Ce que vous allez apprendre
+En créant cette antenne de robot avec votre Raspberry Pi, vous allez apprendre : 
+•	Comment utiliser Scratch pour contrôler des broches GPIO
+•	Comment programmer une LED pour la faire clignoter
+•	Comment ajouter du son dans un programme de Scratch
 
-### Hardware
+## Ce dont vous avez besoin :
 
-As well as a Raspberry Pi and the usual peripherals you'll also need:
+### Matériel
+
+Un Raspberry Pi avec une carde SD mais aussi :
 
 - 1 x LED
-- 1 x 220 ohm resistor
-- 4 x Female-to-female jumper wires
+- 1 x résistance 220 ohm
+- 4 x câbles de raccord femelle-femelle
 
-### Software
+### Logiciel
 
-As well as an SD card loaded with Raspbian you'll need:
+Une carde SD avec Rasbien ou Ubuntu Mate.
+Si vous utilisez Raspbian Wheezy, vous avez besoin de la dernière version de Scratch (avec un support GPIO). Pour l’installer ouvrez le Terminal et écrivez :
 
-- ScratchGPIO
+sudo apt-get update
+sudo apt-get install nuscratch
+
+Cette version de Scratch est déjà incluse dans Raspbian Jessie. 
 
 ### Extras
+Vous aurez aussi besoin :
 
-- 1 x paper clip
+•	Un tube en carton
+•	Pâte à modeler ou Patafix
+•	Colle ou scotch
+•	Crayon
+•	Feuille A4
+•	Crayons de couleur
+•	Ciseaux
 
 ## The worksheet
 
@@ -30,10 +48,10 @@ As well as an SD card loaded with Raspbian you'll need:
 
 ## Licence
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Sauf autres précisions, tout ce qui se trouve dans cet répertoire est couvert par la licence suivante :
 
 [![Creative Commons Licence](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-***Robot Antenna*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+***Robot Antenna*** par la [Fondation Raspberry Pi](http://raspberrypi.org) est crée sous une licence [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/robot-antenna
+Basé sur le matériel disponible à: https://github.com/raspberrypilearning/robot-antenna
