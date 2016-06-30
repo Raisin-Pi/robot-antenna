@@ -1,140 +1,138 @@
-# Robot Antenna
+# Robot Antenne
 
-We are going to make a robot which beeps and has a flashing antenna using a Raspberry Pi.
+Nous allons créer un robot qui fait bip et a une antenne qui clignote en utilisant un Raspberry Pi.
 
-## Making an antenna for your robot
+## Fabriquez une antenne pour votre robot avec une LED
 
-Let's get hands-on with electronics!  This is where the Raspberry Pi comes in handy. You will program a small light called a LED (Light Emitting Diode) to flash. First you will need to make a circuit. Ensure that your Raspberry Pi is switched on and ready to go.
+Commençons avec l’électronique ! C’est là où le Raspberry Pi sera utile. Vous allez programmer une petite lumière, qu’on appelle LED (en français DEL : diode électroluminescente) pour qu’elle clignote. D’abord vous aurez besoin de créer un circuit.
 
-1.  The LED has a short leg and a long leg. Slot a jumper wire onto the long leg.
+1.  La LED a un pied court et un pied long. Insérer un fil dans le pied long.
 
-2.  Slot the resistor into the other end of the same jumper wire.
+2.  Insérer la résistance dans l’autre bout du fil.
 
-3.  Add another jumper wire the other end of the resistor.
+3.  Ajouter un autre fil dans l’autre bout de la résistance.
 
-4.  Take another jumper wire and slot one end onto the short leg of the LED. You should end up with something that looks like this:
+4.  Prenez un autre fil et insérez un bout dans le pied court de la LED. Vous devez avoir quelque chose comme ça à la fin :
 
     ![](images/led-wired.png)
 
-5.  Find pin 1 and pin 6 on your Raspberry Pi using the diagram below:
+5.  Trouvez la première broche 3v3 et une broche GND dans votre Raspberry Pi en utilisant le schéma ci-après :
 
     ![](images/gpio.png "The Raspberry Pi GPIO pins")
 
-    The general purpose input ouput (GPIO) pins on the Raspberry Pi speak and listen to the outside world and can be          controlled or programmed.  Each pin has a specific role. To make life easier the pins are numbered for reference.         Pin 1 is for power. Pin 6 is for grounding.
+    Le but général des broches entrée/sortie (GPIO) d’un Raspberry Pi c’est de communiquer avec le monde en extérieur et être contrôlable et programmable.  Chaque broche a un rôle spécifique. Pour nous faciliter la vie, chaque broche a un numéro de référence. Une broche 3v3 est pour l’alimentation et GND est pour la mise à la terre.
 
-6.  Plug the resistor jumper wire into pin 1 on your Raspberry Pi and the other jumper wire into pin 6.
+6.  Branchez le fil avec la résistance dans la broche 3v3 de votre Raspberry Pi et l’autre fil dans la broche GND.
 
-7.  Plug in the micro USB power supply and you should see some text appear on your screen.
+7.  Branchez le micro USB pour l’alimentation et vous devez voir un texte qui s’affiche sur votre écran.
 
-###How the light antenna works
+### Comment fonctionne la lumière de l’antenne
 
-Now you have a circuit and the LED should be on. If it is not, make sure that you have plugged the jumper wires into the correct pins by checking the diagram above. 
+Maintenant vous avez un circuit et la LED soit s’allumer. Si ce n’est pas le cas, assurez-vous que vous avez branché les fils dans les bonnes broches en vérifiant le schéma en dessus. 
 
-So, why does the LED shine?
+Donc, pourquoi la LED s’allume ?
 
-When the circuit is plugged into the Raspberry Pi GPIO pins, electricity can flow through it. This flow is called the current. The LED only lights up when electric current flows from the long leg through the bulb to the short leg.
+Quand le circuit est branché dans les broches GPIO de Raspberry Pi, l’électricité peut circuler à travers de celui-ci. Cette circulation s’appelle le courant. La LED s’allume seulement quand le courant électrique circule du pied long, à travers l’ampoule et jusqu’au pied court. 
 
-The resistor reduces the amount of electric current passing through the circuit. This protects the LED from breaking, as a high current would make the light shine more brightly and then stop working.
+La résistance diminue la quantité de courant électrique qui passe à travers le circuit. Cela protège la LED de s’abîmer, car un courant élevé pourrait faire la lumière briller encore plus et ensuite s’arrêter de fonctionner.
 
-Well done! You've made the antenna for your robot. Now we need to do some programming to control it. 
+Bravo ! Vous avez fait l’antenne pour votre robot. Maintenant il faut faire un peu de programmation pour la contrôler. 
 
-## Make the antenna flash
+## Faites clignoter l’antenne avec le code
 
-Now you have an antenna that lights up, you can write a program to tell the LED when you want it to be on.
+Maintenant que votre antenne s’allume, vous pouvez écrire un programme pour dire à la LED quand vous voulez qu’elle s’allume.
 
-For this section you will need to use pin 11 rather than pin 1 to power your LED. Pin 11 is special as it can switch power on and off – if you tell it to! Follow the instructions below to learn how to switch pins.
+Pour cela vous aurez besoin d’utiliser la broche 17 plutôt que la 3v3 pour alimenter votre LED. La broche 17 est spéciale car elle peut s’allumer et s’éteindre- quand vous le voulez ! Suivez les instructions ci-dessous pour apprendre comment changer des broches.
 
-1.  Shut your Raspberry Pi down and remove the power cable. Move your jumper wire that is connected to a resistor from pin 1 to pin 11. See the diagram below to make sure that your circuit is correct:
+1.  Eteindre votre Raspberry Pi et enlever le câble d’alimentation. Changer la position de votre fil qui est connecté à la résistance de la broche 3v3 à la broche GPIO 17. Regardez le schéma ci-après pour vous rassurer que le circuit est correct :
 
     ![](images/finished-circuit.png)
 
-2.  Connect the power cable to the Raspberry Pi and, when prompted to log in, type:
+2.  Connectez le câble de l’alimentation à votre Raspberry Pi et attendez pour que ça démarre.
 
-    ```
-    Login: pi
-    Password: raspberry
-    ```
+3.  Ouvrez Scratch en cliquant sur Menu et Programmation, suivi par Scratch.
 
-3.  Once you have logged in, type `startx` to load the desktop.
+4.  Cliquer sur Edit et Start GPIO server s’il n’a pas été déjà démarré.
 
-4.  The desktop should have a **ScratchGPIO** icon. Double click it.
+ ![](images/Scratch-interface.png "The Scratch Interface")
 
-5.  If prompted click **OK** when the remote sensor connections are enabled.
-
-    ![](images/Scratch-interface.png "The Scratch Interface")
-
-6.  Right-click on the Scratch cat and choose **delete** from the menu.
-
-    Then click on the button for a new sprite and choose **robot3** from the **fantasy** folder.
+6.  Ensuite cliquez sur le bouton pour ouvrir un nouveau lutin et choisissez robot3 du dossier fantasy
 
     ![](images/new_sprite.png "The Snew sprite from folder icon")
 
-7.  Click on **control** in the top left display. Drag the **when Sprite1 clicked** block onto the scripts area. Then click on **Sound** and drag the **play sound** block onto the scripts area and connect it to the control block.
+7.  Cliquez sur control. Glissez le bloc quand drapeau vert pressé  dans la zone de scripts. Ensuite connectez un bloc « broadcast » en dessous. Cliquez sur le menu déroulant dans le bloc « broadcast » et sélectionnez « new ».
+Dans le message nommez le type de boîte « config17output ». Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. Cela est parce que vous dites à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
 
     ![](images/play_sound.png "Connecting blocks in Scratch")
 
-8.  Click on the **Sounds** tab above the scripts area and then click on **Import**. Choose **Electronic** and then **ComputerBeeps2**. This will add it to the sounds tab.
+8.  Glissez le bloc « quand espace pressé » dans la zone de scripts. Ensuit cliquez sur Sound et glisser le bloc « play sound » dans la zone de script et connectez-le dans le bloc de contrôle. 
 
-9.  Now go back to the scripts area by clicking on the scripts tab. Click on the drop down box next to play sound. Choose the sound you just imported from the menu.
+9.  Cliquez sur l’étiquette Sounds qui se trouve au-dessus de la zione e scripts et nseuite cliquez sur Import. Sélectionnez Electronique et ensuite ComputerBeeps2. Cela va l’ajouter dans l’étiquette de sons. 
+
+10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de « play sound ». Selectionnez le son que vous venez d’importer dans le menu.
 
     ![](images/play_sound_beep.png "Play Sound block with a sound")
 
-10. Test that your program so far is working, by clicking on the robot sprite. It should beep!
+11. Testez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
 
-11. Save your work so far by clicking on **File** and **Save As**. Name your file **Robot** and click **OK**.
+12. Enregistrer votre travail en cliquant sur Fichier et Enregistrer sous. Nommer votre fichier Robot et cliquer sur OK.
 
-12. Click on the **control** in the blocks palette and drag a **broadcast** block to your scripts area and attach it to the play sound block. Click on the drop down menu on the broadcast block and select **new**.
+13.	Cliquer sur contrôle dans la palette de blocs et glisser un bloc « broadcast » dans la zone de scripts et attachez-le au bloc « play sound ». Cliquez sur le menu déroulant dans le bloc de « broadcast » et selectionnez « nouveau ».
 
-    In the message name box type **pin11on** This instruction will tell the Raspberry Pi to light the LED.
+
+    Dans le message nommez le type de case « gpio17on ». Cette instruction dira au Raspberry Pi d’allumer la LED.
 
     ![](images/pin11on.png "Sending a broadcast message to turn pin 11 on")
 
-13. Drag a **wait 1 second** block onto the scripts area and connect it to the broadcast block.
+14.	Glissez un bloc « wait 1 second » dans la zone de script et connectez-le au bloc « broadcast ».
 
-14. Test your program by clicking on the robot sprite. You should see the LED shine and stay on.
+15.	Testez votre programme en cliquant sur le lutin robot. Vous devez voir une LED qui s’allume et reste allumée.
 
-15. Drag another **broadcast** block onto your scripts area and connect it to the wait 1 second block. Click on the drop down menu on the broadcast block and select **new**.
+16.	Glissez un autre bloc « broadcast » dans la zone de script et connectez-le au bloc « wait 1 second ».
+Cliquez sur le menu déroulant dans le bloc « broadcast » et sélectionnez « new ».
 
-    In the message name box type **pin11off** This will switch off the LED.
 
-16. Now add another **wait 1 second** block to the script.
+    Dans le message nommez le type de case « gpio17off ». Cela éteindra la LED.
 
-17. Test your program again by clicking on the robot sprite. You should see the LED turn on for one second and turn off for one second.
+17.	Maintenant ajouter un autre bloc « wait 1 second » dans le script.
+
+18.	Tester votre programme encore en cliquant sur le lutin de robot. Vous devez voir la LED s’allumer pour une seconde et s’éteindre pour une seconde.
 
     ![](images/pin11off.png "Turn pin 11 off")
 
-## Make a cardboard robot
+## Fabriquez un robot en carton
 
-You will make a cardboard robot and add your light antenna.
+Vous allez construire un robot en carton et lui ajouter l’antenne de lumière.
 
-1.  On a sheet of A4 paper, draw or print your own robot design. It should be drawn portrait so it can be wrapped around your cardboard tube. Make sure it has an antenna!
+1.	Sur un papier A4, dessinez ou imprimez votre robot. Il doit être dessiné en portrait pour qu’il puisse s’enrouler autour de votre carton de tube. Assurez-vous qu’il a une antenne !
 
-2.  Colour in the robot picture and cut it out carefully.
+2.	Colorez l’intérieur du robot et coupez-le.
 
-3.  Wrap the robot around the cardboard tube length ways.
+3.	Enroulez le robot autour du tube de carton dans sa longueur.
 
     ![](images/cardboard.png "Wrap the robot around the cardboard tube")
 
-4.  Glue or tape the robot in place.
+4.	Collez ou scotchez le robot.
 
-5.  Stick plasticine or blu tack behind the robot's antenna inside the cardboard tube.
+5.	Collez la pâte à modeler ou la Patafix derrière l’antenne du robot à l’intérieur du tube de carton.
 
     ![](images/cardboard2.png)
 
-6.  Push a pencil into the antenna to make a hole through the cardboard tube.
+6.	Appuyez avec un crayon l’antenne pour faire un trou à travers le tube de carton.
 
     ![](images/cardboard3.png "Make a hole in the cardboard for the LED antenna")
 
-7.  Remove the plasticine.
+7.	Enlever la patafix.
 
-8.  Put your circuit of jumper wires, LED, and resistor inside your cardboard tube. Push your LED through the hole in the tube to make the robot's antenna.
+8.	Mettez le circuit des fils, LED, et résistance à l’intérieur du tube de carton. Appuyez sur la LED à travers le trou dans le tube pour faire l’antenne de robot.
 
-9.  Give your Robot a name and welcome it to the world.
+9.	Donnez un nom à votre robot et souhaitez-lui la bienvenue dans le monde.
 
-**Congratulations! Your robot is complete!**
+**Félicitations ! Votre robot est prêt !**
 
-## What next?
+## Pour aller plus loin
 
--   Can you make the cardboard robot's antenna stay on for longer?
--   Can you make the light flash more than once?
--   Try recording new sounds to play when your program plays.
+•	Est-ce que vous pouvez faire l’antenne rester allumer plus longtemps ?
+•	Est-ce que vous pouvez faire la lumière clignoter plus d’une fois ?
+•	Essayez d’enregistrer de nouveaux sons quand votre programme est exécuté.
+
