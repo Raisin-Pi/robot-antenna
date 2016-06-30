@@ -42,9 +42,9 @@ Vous aurez aussi besoin :
 -	Crayons de couleur
 -	Ciseaux
 
-## The worksheet
+## Feuille de travail
 
-- [Worksheet](worksheet.md)
+- [Feuille de travail](worksheet.md)
 
 ## Licence
 
