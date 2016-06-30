@@ -7,9 +7,9 @@ Dans cette ressource, vous allez faire un robot qui fait bip sur Scratch et cons
 
 ### Ce que vous allez apprendre
 En créant cette antenne de robot avec votre Raspberry Pi, vous allez apprendre : 
-•	Comment utiliser Scratch pour contrôler des broches GPIO
-•	Comment programmer une LED pour la faire clignoter
-•	Comment ajouter du son dans un programme de Scratch
+-	Comment utiliser Scratch pour contrôler des broches GPIO
+-	Comment programmer une LED pour la faire clignoter
+-	Comment ajouter du son dans un programme de Scratch
 
 ## Ce dont vous avez besoin :
 
@@ -34,13 +34,13 @@ Cette version de Scratch est déjà incluse dans Raspbian Jessie.
 ### Extras
 Vous aurez aussi besoin :
 
-•	Un tube en carton
-•	Pâte à modeler ou Patafix
-•	Colle ou scotch
-•	Crayon
-•	Feuille A4
-•	Crayons de couleur
-•	Ciseaux
+-	Un tube en carton
+-	Pâte à modeler ou Patafix
+-	Colle ou scotch
+-	Crayon
+-	Feuille A4
+-	Crayons de couleur
+-	Ciseaux
 
 ## The worksheet
 
