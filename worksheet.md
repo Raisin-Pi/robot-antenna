@@ -16,13 +16,13 @@ Commençons avec l’électronique ! C’est là où le Raspberry Pi sera utile.
 
     ![](images/led-wired.png)
 
-5.  Trouvez la première broche *3v3* et une broche *GND* dans votre Raspberry Pi en utilisant le schéma ci-après :
+5.  Trouvez la première broche `3v3` et une broche `GND` dans votre Raspberry Pi en utilisant le schéma ci-après :
 
     ![](images/gpio.png "The Raspberry Pi GPIO pins")
 
-    Le but général des broches entrée/sortie (GPIO) d’un Raspberry Pi c’est de communiquer avec le monde en extérieur et être contrôlable et programmable.  Chaque broche a un rôle spécifique. Pour nous faciliter la vie, chaque broche a un numéro de référence. Une broche *3v3* est pour l’alimentation et *GND* est pour la mise à la terre.
+    Le but général des broches entrée/sortie (GPIO) d’un Raspberry Pi c’est de communiquer avec le monde en extérieur et être contrôlable et programmable.  Chaque broche a un rôle spécifique. Pour nous faciliter la vie, chaque broche a un numéro de référence. Une broche `3v3` est pour l’alimentation et `GND` est pour la mise à la terre.
 
-6.  Branchez le fil avec la résistance dans la broche *3v3* de votre Raspberry Pi et l’autre fil dans la broche *GND*.
+6.  Branchez le fil avec la résistance dans la broche `3v3` de votre Raspberry Pi et l’autre fil dans la broche *GND*.
 
 7.  Branchez le micro USB pour l’alimentation et vous devez voir un texte qui s’affiche sur votre écran.
 
@@ -42,34 +42,34 @@ Bravo ! Vous avez fait l’antenne pour votre robot. Maintenant il faut faire un
 
 Maintenant que votre antenne s’allume, vous pouvez écrire un programme pour dire à la LED quand vous voulez qu’elle s’allume.
 
-Pour cela vous aurez besoin d’utiliser la broche *17* plutôt que la *3v3* pour alimenter votre LED. La broche 17 est spéciale car elle peut s’allumer et s’éteindre- quand vous le voulez ! Suivez les instructions ci-dessous pour apprendre comment changer des broches.
+Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pour alimenter votre LED. La broche 17 est spéciale car elle peut s’allumer et s’éteindre- quand vous le voulez ! Suivez les instructions ci-dessous pour apprendre comment changer des broches.
 
-1.  Eteindre votre Raspberry Pi et enlever le câble d’alimentation. Changer la position de votre fil qui est connecté à la résistance de la broche *3v3* à la broche GPIO *17*. Regardez le schéma ci-après pour vous rassurer que le circuit est correct :
+1.  Eteindre votre Raspberry Pi et enlever le câble d’alimentation. Changer la position de votre fil qui est connecté à la résistance de la broche `3v3` à la broche GPIO `17`. Regardez le schéma ci-après pour vous rassurer que le circuit est correct :
 
     ![](images/finished-circuit.png)
 
 2.  Connectez le câble de l’alimentation à votre Raspberry Pi et attendez pour que ça démarre.
 
-3.  Ouvrez Scratch en cliquant sur *Menu* et *Programmation*, suivi par *Scratch*.
+3.  Ouvrez Scratch en cliquant sur **Menu** et **Programmation**, suivi par **Scratch**.
 
-4.  Cliquer sur *Edit* et *Start GPIO server* s’il n’a pas été déjà démarré.
+4.  Cliquer sur **Edit** et **Start GPIO server** s’il n’a pas été déjà démarré.
 
  ![](images/Scratch-interface.png "The Scratch Interface")
  
-5. Clic-droit sur le chat de Scratch et sélectionnez *supprimer* dans le menu.
+5. Clic-droit sur le chat de Scratch et sélectionnez **supprimer** dans le menu.
 
-6.  Ensuite cliquez sur le bouton pour ouvrir un nouveau lutin et choisissez *robot3* du dossier *fantasy*.
+6.  Ensuite cliquez sur le bouton pour ouvrir un nouveau lutin et choisissez **robot3** du dossier **fantasy**.
 
     ![](images/new_sprite.png "The Snew sprite from folder icon")
 
-7.  Cliquez sur *contrôle*. Glissez le bloc 'quand drapeau vert pressé' dans la zone de scripts. Ensuite connectez un bloc 'broadcast' en dessous. Cliquez sur le menu déroulant dans le bloc 'broadcast' et sélectionnez *new*.
-Dans le message nommez le type de boîte « config17output ». Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. Cela est parce que vous dites à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
+7.  Cliquez sur **contrôle**. Glissez le bloc `quand drapeau vert pressé` dans la zone de scripts. Ensuite connectez un bloc `broadcast` en dessous. Cliquez sur le menu déroulant dans le bloc `broadcast` et sélectionnez **new**.
+Dans le message nommez le type de boîte `config17output`. Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. Cela est parce que vous dites à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
 
     ![](images/play_sound.png "Connecting blocks in Scratch")
 
-8.  Glissez le bloc « quand espace pressé » dans la zone de scripts. Ensuit cliquez sur Sound et glisser le bloc « play sound » dans la zone de script et connectez-le dans le bloc de contrôle. 
+8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur Sound et glisser le bloc `play sound` dans la zone de script et connectez-le dans le bloc de contrôle. 
 
-9.  Cliquez sur l’étiquette Sounds qui se trouve au-dessus de la zione e scripts et nseuite cliquez sur Import. Sélectionnez Electronique et ensuite ComputerBeeps2. Cela va l’ajouter dans l’étiquette de sons. 
+9.  Cliquez sur l’étiquette **Sounds** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronique** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
 10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de « play sound ». Selectionnez le son que vous venez d’importer dans le menu.
 
@@ -77,26 +77,26 @@ Dans le message nommez le type de boîte « config17output ». Cette instruction
 
 11. Testez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
 
-12. Enregistrer votre travail en cliquant sur Fichier et Enregistrer sous. Nommer votre fichier Robot et cliquer sur OK.
+12. Enregistrer votre travail en cliquant sur **Fichier** et **Enregistrer sous**. Nommer votre fichier **Robot** et cliquer sur **OK**.
 
-13.	Cliquer sur contrôle dans la palette de blocs et glisser un bloc « broadcast » dans la zone de scripts et attachez-le au bloc « play sound ». Cliquez sur le menu déroulant dans le bloc de « broadcast » et selectionnez « nouveau ».
+13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `broadcast` dans la zone de scripts et attachez-le au bloc play sound. Cliquez sur le menu déroulant dans le bloc de broadcast et selectionnez **nouveau**.
 
 
-    Dans le message nommez le type de case « gpio17on ». Cette instruction dira au Raspberry Pi d’allumer la LED.
+    Dans le message nommez le type de case `gpio17on`. Cette instruction dira au Raspberry Pi d’allumer la LED.
 
     ![](images/pin11on.png "Sending a broadcast message to turn pin 11 on")
 
-14.	Glissez un bloc « wait 1 second » dans la zone de script et connectez-le au bloc « broadcast ».
+14.	Glissez un bloc `wait 1 second` dans la zone de script et connectez-le au bloc `broadcast`.
 
 15.	Testez votre programme en cliquant sur le lutin robot. Vous devez voir une LED qui s’allume et reste allumée.
 
-16.	Glissez un autre bloc « broadcast » dans la zone de script et connectez-le au bloc « wait 1 second ».
-Cliquez sur le menu déroulant dans le bloc « broadcast » et sélectionnez « new ».
+16.	Glissez un autre bloc `broadcast` dans la zone de script et connectez-le au bloc `wait 1 second`.
+Cliquez sur le menu déroulant dans le bloc « broadcast » et sélectionnez **new**.
 
 
-    Dans le message nommez le type de case « gpio17off ». Cela éteindra la LED.
+    Dans le message nommez le type de case `gpio17off`. Cela éteindra la LED.
 
-17.	Maintenant ajouter un autre bloc « wait 1 second » dans le script.
+17.	Maintenant ajouter un autre bloc `wait 1 second` dans le script.
 
 18.	Tester votre programme encore en cliquant sur le lutin de robot. Vous devez voir la LED s’allumer pour une seconde et s’éteindre pour une seconde.
 
