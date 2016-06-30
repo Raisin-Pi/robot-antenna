@@ -132,7 +132,7 @@ Vous allez construire un robot en carton et lui ajouter l’antenne de lumière.
 
 ## Pour aller plus loin
 
-•	Est-ce que vous pouvez faire l’antenne rester allumer plus longtemps ?
-•	Est-ce que vous pouvez faire la lumière clignoter plus d’une fois ?
-•	Essayez d’enregistrer de nouveaux sons quand votre programme est exécuté.
+-	Est-ce que vous pouvez faire l’antenne rester allumer plus longtemps ?
+-	Est-ce que vous pouvez faire la lumière clignoter plus d’une fois ?
+-	Essayez d’enregistrer de nouveaux sons quand votre programme est exécuté.
 
