@@ -27,6 +27,7 @@ Une carde SD avec Rasbien ou Ubuntu Mate.
 Si vous utilisez Raspbian Wheezy, vous avez besoin de la dernière version de Scratch (avec un support GPIO). Pour l’installer ouvrez le Terminal et écrivez :
 
 sudo apt-get update
+
 sudo apt-get install nuscratch
 
 Cette version de Scratch est déjà incluse dans Raspbian Jessie. 
