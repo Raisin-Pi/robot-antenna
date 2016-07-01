@@ -3,11 +3,11 @@
 ![](cover.png)
 
 ### Ce que vous allez créer
-Dans cette ressource, vous allez faire un robot qui fait bip sur Scratch et construire un robot en carton avec une vraie antenne à LED qui clignote en utilisant un Raspberry Pi. 
+Dans cette séance, vous allez construire un robot sur Scratch qui bip et fabriquer un robot en carton avec une vraie antenne à LED qui clignote en utilisant un Raspberry Pi. 
 
 ### Ce que vous allez apprendre
 En créant cette antenne de robot avec votre Raspberry Pi, vous allez apprendre : 
--	Comment utiliser Scratch pour contrôler des broches GPIO
+-	Comment utiliser Scratch pour contrôler des broches GPIO (entrée/sortie)
 -	Comment programmer une LED pour la faire clignoter
 -	Comment ajouter du son dans un programme de Scratch
 
@@ -26,9 +26,9 @@ Un Raspberry Pi avec une carde SD mais aussi :
 Une carde SD avec Rasbien ou Ubuntu Mate.
 Si vous utilisez Raspbian Wheezy, vous avez besoin de la dernière version de Scratch (avec un support GPIO). Pour l’installer ouvrez le Terminal et écrivez :
 
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get install nuscratch
+`sudo apt-get install nuscratch`
 
 Cette version de Scratch est déjà incluse dans Raspbian Jessie. 
 
