@@ -103,7 +103,7 @@ Cliquez sur le menu déroulant dans le bloc `envoyer à tous` et sélectionnez *
 
 18.	Tester votre programme encore en cliquant sur le lutin de robot. Vous devez voir la LED s’allumer pour une seconde et s’éteindre pour une seconde.
 
-    ![](images/Capture-2.png )
+    ![](images/Capture-4.png )
 
 ## Fabriquez un robot en carton
 
