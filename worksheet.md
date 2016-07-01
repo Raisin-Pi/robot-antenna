@@ -68,13 +68,13 @@ Dans le message nommez le type de boîte `config17output`. Cette instruction dir
 
    ![](images/Capture.png)
 
-8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur **Son** et glisser le bloc `jouer son` dans la zone de script et connectez-le dans le bloc de contrôle. 
+8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur **Son** et glisser le bloc `jouer le son` dans la zone de script et connectez-le dans le bloc de contrôle. 
 
 ![](images/Capture-2.png )
 
 9.  Cliquez sur l’étiquette **Sons** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronic** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
-10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer son`. Selectionnez le son que vous venez d’importer dans le menu.
+10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer le son`. Selectionnez le son que vous venez d’importer dans le menu.
 
     ![](images/Capture-3.png )
 
@@ -82,7 +82,7 @@ Dans le message nommez le type de boîte `config17output`. Cette instruction dir
 
 12. Enregistrez votre travail en cliquant sur **Fichier** et **Enregistrer sous**. Nommer votre fichier **Robot** et cliquer sur **OK**.
 
-13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `envoyer à tous` dans la zone de scripts et attachez-le au bloc `jouer son`. Cliquez sur le menu déroulant dans le bloc de `envoyer à tous` et selectionnez **nouveau**.
+13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `envoyer à tous` dans la zone de scripts et attachez-le au bloc `jouer le son`. Cliquez sur le menu déroulant dans le bloc de `envoyer à tous` et selectionnez **nouveau**.
 
 
     Dans le message nommez le type de case `gpio17on`. Cette instruction dira au Raspberry Pi d’allumer la LED.
