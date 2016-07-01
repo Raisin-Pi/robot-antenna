@@ -12,7 +12,7 @@ Commençons avec l’électronique ! C’est là où le Raspberry Pi sera utile.
 
 3.  Ajouter un autre fil dans l’autre bout de la résistance.
 
-4.  Prenez un autre fil et insérez un bout dans le pied court de la LED. Vous devez avoir quelque chose comme ça à la fin :
+4.  Prenez un autre fil et insérez-le dans le pied court de la LED. Vous devez avoir quelque chose comme ça à la fin :
 
     ![](images/led-wired.png)
 
@@ -28,13 +28,13 @@ Commençons avec l’électronique ! C’est là où le Raspberry Pi sera utile.
 
 ### Comment fonctionne la lumière de l’antenne
 
-Maintenant vous avez un circuit et la LED soit s’allumer. Si ce n’est pas le cas, assurez-vous que vous avez branché les fils dans les bonnes broches en vérifiant le schéma en dessus. 
+Maintenant vous avez un circuit et la LED doit s’allumer. Si ce n’est pas le cas, assurez-vous que vous avez branché les fils dans les bonnes broches en vérifiant le schéma en dessus. 
 
 Donc, pourquoi la LED s’allume ?
 
 Quand le circuit est branché dans les broches GPIO de Raspberry Pi, l’électricité peut circuler à travers de celui-ci. Cette circulation s’appelle le courant. La LED s’allume seulement quand le courant électrique circule du pied long, à travers l’ampoule et jusqu’au pied court. 
 
-La résistance diminue la quantité de courant électrique qui passe à travers le circuit. Cela protège la LED de s’abîmer, car un courant élevé pourrait faire la lumière briller encore plus et ensuite s’arrêter de fonctionner.
+La résistance diminue la quantité de courant électrique qui passe à travers le circuit. Cela protège la LED de s’abîmer, car un courant élevé pourrait faire la lumière briller encore plus et ensuite arrêter de fonctionner.
 
 Bravo ! Vous avez fait l’antenne pour votre robot. Maintenant il faut faire un peu de programmation pour la contrôler. 
 
@@ -44,7 +44,7 @@ Maintenant que votre antenne s’allume, vous pouvez écrire un programme pour d
 
 Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pour alimenter votre LED. La broche 17 est spéciale car elle peut s’allumer et s’éteindre- quand vous le voulez ! Suivez les instructions ci-dessous pour apprendre comment changer des broches.
 
-1.  Eteindre votre Raspberry Pi et enlever le câble d’alimentation. Changer la position de votre fil qui est connecté à la résistance de la broche `3v3` à la broche GPIO `17`. Regardez le schéma ci-après pour vous rassurer que le circuit est correct :
+1.  Eteignez votre Raspberry Pi et enlever le câble d’alimentation. Changez la position de votre fil qui est connecté à la résistance de la broche `3v3` à la broche GPIO `17`. Regardez le schéma ci-après pour vous rassurer que le circuit est correct :
 
     ![](images/finished-circuit.png)
 
