@@ -54,7 +54,7 @@ Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pou
 
 4.  Cliquer sur **Edit** et **Start GPIO server** s’il n’a pas été déjà démarré.
 
- ![](images/Scratch-interface.png "The Scratch Interface")
+ ![](images/gpio-server.png )
  
 5. Clic-droit sur le chat de Scratch et sélectionnez **supprimer** dans le menu.
 
@@ -65,33 +65,35 @@ Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pou
 7.  Cliquez sur **contrôle**. Glissez le bloc `quand drapeau vert pressé` dans la zone de scripts. Ensuite connectez un bloc `broadcast` en dessous. Cliquez sur le menu déroulant dans le bloc `broadcast` et sélectionnez **new**.
 Dans le message nommez le type de boîte `config17output`. Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. Cela est parce que vous dites à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
 
-    ![](images/play_sound.png "Connecting blocks in Scratch")
+    ![](images/capture.png )
 
 8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur Sound et glisser le bloc `play sound` dans la zone de script et connectez-le dans le bloc de contrôle. 
 
-9.  Cliquez sur l’étiquette **Sounds** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronique** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
+![](images/capture-2.png )
+
+9.  Cliquez sur l’étiquette **Sons** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronic** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
 10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de « play sound ». Selectionnez le son que vous venez d’importer dans le menu.
 
-    ![](images/play_sound_beep.png "Play Sound block with a sound")
+    ![](images/capture-3.png )
 
-11. Testez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
+11. Vérifiez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
 
-12. Enregistrer votre travail en cliquant sur **Fichier** et **Enregistrer sous**. Nommer votre fichier **Robot** et cliquer sur **OK**.
+12. Enregistrez votre travail en cliquant sur **Fichier** et **Enregistrer sous**. Nommer votre fichier **Robot** et cliquer sur **OK**.
 
-13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `broadcast` dans la zone de scripts et attachez-le au bloc play sound. Cliquez sur le menu déroulant dans le bloc de broadcast et selectionnez **nouveau**.
+13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `envoyer à tous` dans la zone de scripts et attachez-le au bloc `jouer son`. Cliquez sur le menu déroulant dans le bloc de `envoyer à tous` et selectionnez **nouveau**.
 
 
     Dans le message nommez le type de case `gpio17on`. Cette instruction dira au Raspberry Pi d’allumer la LED.
 
     ![](images/pin11on.png "Sending a broadcast message to turn pin 11 on")
 
-14.	Glissez un bloc `wait 1 second` dans la zone de script et connectez-le au bloc `broadcast`.
+14.	Glissez un bloc `wait 1 second` dans la zone de script et connectez-le au bloc `envoyer à tous`.
 
 15.	Testez votre programme en cliquant sur le lutin robot. Vous devez voir une LED qui s’allume et reste allumée.
 
-16.	Glissez un autre bloc `broadcast` dans la zone de script et connectez-le au bloc `wait 1 second`.
-Cliquez sur le menu déroulant dans le bloc « broadcast » et sélectionnez **new**.
+16.	Glissez un autre bloc `envoyer à tous` dans la zone de script et connectez-le au bloc `wait 1 second`.
+Cliquez sur le menu déroulant dans le bloc `envoyer à tous` et sélectionnez **nouveau**.
 
 
     Dans le message nommez le type de case `gpio17off`. Cela éteindra la LED.
