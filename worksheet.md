@@ -52,7 +52,7 @@ Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pou
 
 3.  Ouvrez Scratch en cliquant sur **Menu** et **Programmation**, suivi par **Scratch**.
 
-4.  Cliquer sur **Edit** et **Start GPIO server** s’il n’a pas été déjà démarré.
+4.  Cliquez sur **Edit** et **Start GPIO server** s’il n’a pas été déjà démarré.
 
  ![](images/gpio-server.png )
  
@@ -66,17 +66,17 @@ Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pou
 
 Dans le message nommez le type de boîte `config17output`. Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. On fait cela car on dit à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
 
-    ![](images/capture.png )
+   ![](images/Capture.png)
 
 8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur **Son** et glisser le bloc `jouer son` dans la zone de script et connectez-le dans le bloc de contrôle. 
 
-![](images/capture-2.png )
+![](images/Capture-2.png )
 
 9.  Cliquez sur l’étiquette **Sons** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronic** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
 10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer son`. Selectionnez le son que vous venez d’importer dans le menu.
 
-    ![](images/capture-3.png )
+    ![](images/Capture-3.png )
 
 11. Vérifiez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
 
@@ -87,23 +87,23 @@ Dans le message nommez le type de boîte `config17output`. Cette instruction dir
 
     Dans le message nommez le type de case `gpio17on`. Cette instruction dira au Raspberry Pi d’allumer la LED.
 
-    ![](images/pin11on.png "Sending a broadcast message to turn pin 11 on")
+   ![](images/Capture-1.png )
 
-14.	Glissez un bloc `wait 1 second` dans la zone de script et connectez-le au bloc `envoyer à tous`.
+14.	Glissez un bloc `attendre 1 secondes` dans la zone de script et connectez-le au bloc `envoyer à tous`.
 
 15.	Testez votre programme en cliquant sur le lutin robot. Vous devez voir une LED qui s’allume et reste allumée.
 
-16.	Glissez un autre bloc `envoyer à tous` dans la zone de script et connectez-le au bloc `wait 1 second`.
+16.	Glissez un autre bloc `envoyer à tous` dans la zone de script et connectez-le au bloc `attendre 1 secondes`.
 Cliquez sur le menu déroulant dans le bloc `envoyer à tous` et sélectionnez **nouveau**.
 
 
     Dans le message nommez le type de case `gpio17off`. Cela éteindra la LED.
 
-17.	Maintenant ajouter un autre bloc `wait 1 second` dans le script.
+17.	Maintenant ajouter un autre bloc `attendre 1 secondes` dans le script.
 
 18.	Tester votre programme encore en cliquant sur le lutin de robot. Vous devez voir la LED s’allumer pour une seconde et s’éteindre pour une seconde.
 
-    ![](images/pin11off.png "Turn pin 11 off")
+    ![](images/Capture-2.png )
 
 ## Fabriquez un robot en carton
 
