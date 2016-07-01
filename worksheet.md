@@ -62,18 +62,19 @@ Pour cela vous aurez besoin d’utiliser la broche `17` plutôt que la `3v3` pou
 
     ![](images/new_sprite.png "The Snew sprite from folder icon")
 
-7.  Cliquez sur **contrôle**. Glissez le bloc `quand drapeau vert pressé` dans la zone de scripts. Ensuite connectez un bloc `broadcast` en dessous. Cliquez sur le menu déroulant dans le bloc `broadcast` et sélectionnez **new**.
-Dans le message nommez le type de boîte `config17output`. Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. Cela est parce que vous dites à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
+7.  Cliquez sur **contrôle**. Glissez le bloc `quand drapeau vert pressé` dans la zone de scripts. Ensuite connectez un bloc `envoyer à tous` en dessous. Cliquez sur le menu déroulant dans le bloc `envoyer à tous` et sélectionnez **nouveau**.
+
+Dans le message nommez le type de boîte `config17output`. Cette instruction dira au Raspberry Pi que la broche 17 sera une sortie. On fait cela car on dit à la broche d’allumer et éteindre une LED qui est un composant de sortie.  
 
     ![](images/capture.png )
 
-8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur Sound et glisser le bloc `play sound` dans la zone de script et connectez-le dans le bloc de contrôle. 
+8.  Glissez le bloc `quand espace pressé` dans la zone de scripts. Ensuit cliquez sur **Son** et glisser le bloc `jouer son` dans la zone de script et connectez-le dans le bloc de contrôle. 
 
 ![](images/capture-2.png )
 
 9.  Cliquez sur l’étiquette **Sons** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronic** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
-10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de « play sound ». Selectionnez le son que vous venez d’importer dans le menu.
+10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer son`. Selectionnez le son que vous venez d’importer dans le menu.
 
     ![](images/capture-3.png )
 
