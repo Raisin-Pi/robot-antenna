@@ -55,4 +55,4 @@ Sauf autres précisions, tout ce qui se trouve dans cet répertoire est couvert 
 
 ***Robot Antenna*** par la [Fondation Raspberry Pi](http://raspberrypi.org) est crée sous une licence [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Basé sur le matériel disponible à: https://github.com/raspberrypilearning/robot-antenna
+D'après un travail paru sur https://github.com/raspberrypilearning/robot-antenna fait par Melpomeni Papadopoulou pour le projet [D-Clics Numériques](http://d-clicsnumeriques.org/) 
