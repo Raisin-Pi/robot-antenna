@@ -74,15 +74,15 @@ Dans le message nommez le type de boîte `config17output`. Cette instruction dir
 
 9.  Cliquez sur l’étiquette **Sons** qui se trouve au-dessus de la zone de scripts et ensuite cliquez sur **Importer**. Sélectionnez **Electronic** et ensuite **ComputerBeeps2**. Cela va l’ajouter dans l’étiquette de sons. 
 
-10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer le son`. Selectionnez le son que vous venez d’importer dans le menu.
+10.  Maintenant retournez dans la zone de scripts en cliquant sur l’étiquette de scripts. Cliquez sur la case roulante qui se trouve à côté de `jouer le son`. Sélectionnez le son que vous venez d’importer dans le menu.
 
     ![](images/Capture-3.png )
 
-11. Vérifiez que le programme fonctionne jusque là, en appuyant la touche espace. Il doit bipper !
+11. Vérifiez que le programme fonctionne jusque-là, en appuyant la touche espace. Il doit bipper !
 
 12. Enregistrez votre travail en cliquant sur **Fichier** et **Enregistrer sous**. Nommer votre fichier **Robot** et cliquer sur **OK**.
 
-13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `envoyer à tous` dans la zone de scripts et attachez-le au bloc `jouer le son`. Cliquez sur le menu déroulant dans le bloc de `envoyer à tous` et selectionnez **nouveau**.
+13.	Cliquer sur **contrôle** dans la palette de blocs et glisser un bloc `envoyer à tous` dans la zone de scripts et attachez-le au bloc `jouer le son`. Cliquez sur le menu déroulant dans le bloc de `envoyer à tous` et sélectionnez **nouveau**.
 
 
     Dans le message nommez le type de case `gpio17on`. Cette instruction dira au Raspberry Pi d’allumer la LED.
@@ -127,7 +127,7 @@ Vous allez construire un robot en carton et lui ajouter l’antenne de lumière.
 
     ![](images/cardboard3.png "Make a hole in the cardboard for the LED antenna")
 
-7.	Enlever la patafix.
+7.	Enlevez la patafix.
 
 8.	Mettez le circuit des fils, LED, et résistance à l’intérieur du tube de carton. Appuyez sur la LED à travers le trou dans le tube pour faire l’antenne de robot.
 
@@ -137,7 +137,7 @@ Vous allez construire un robot en carton et lui ajouter l’antenne de lumière.
 
 ## Pour aller plus loin
 
--	Est-ce que vous pouvez faire l’antenne rester allumer plus longtemps ?
--	Est-ce que vous pouvez faire la lumière clignoter plus d’une fois ?
+-	Est-ce que vous pouvez allumer l'antenne plus longtemps ?
+-	Est-ce que vous pouvez faire clignoter la lumière plus d’une fois ?
 -	Essayez d’enregistrer de nouveaux sons quand votre programme est exécuté.
 
